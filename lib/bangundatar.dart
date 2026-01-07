@@ -39,8 +39,6 @@ class Bangundatar extends StatelessWidget {
                 ),
               ],
             ),
-
-            // BUTTON
             Row(
               children: [
                 Expanded(
@@ -58,10 +56,7 @@ class Bangundatar extends StatelessWidget {
                 ),
               ],
             ),
-
             const SizedBox(height: 20),
-
-            // HASIL
             ValueListenableBuilder(
               valueListenable: controller.state,
               builder: (context, value, _) {
@@ -81,10 +76,7 @@ class Bangundatar extends StatelessWidget {
                 );
               },
             ),
-
             const Spacer(),
-
-            // RESET
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

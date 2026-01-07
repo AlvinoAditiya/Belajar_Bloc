@@ -8,7 +8,6 @@ class BangunDatarController {
   final ValueNotifier<BangunDatarState> state =
       ValueNotifier(BangunDatarState());
 
-  // EVENT: Hitung Luas
   void hitungLuas() {
     double p = double.tryParse(panjangController.text) ?? 0;
     double l = double.tryParse(lebarController.text) ?? 0;
@@ -18,7 +17,6 @@ class BangunDatarController {
     );
   }
 
-  // EVENT: Hitung Keliling
   void hitungKeliling() {
     double p = double.tryParse(panjangController.text) ?? 0;
     double l = double.tryParse(lebarController.text) ?? 0;
@@ -28,7 +26,6 @@ class BangunDatarController {
     );
   }
 
-  // EVENT: Reset
   void reset() {
     panjangController.clear();
     lebarController.clear();
